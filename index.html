@@ -35,10 +35,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" href="#download">Download</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -85,7 +85,7 @@
     <!-- ===================================
                 Features Section One
     ======================================== -->
-    <section class="banner bg-white">
+    <section id="features" class="features bg-white">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-5">
@@ -125,7 +125,7 @@
     <!-- ===================================
                 Features Section Two
     ======================================== -->
-    <section class="banner">
+    <section class="features">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
@@ -160,7 +160,7 @@
     <!-- ===================================
               Features Section Three
     ======================================== -->
-    <section class="banner bg-white">
+    <section class="features bg-white">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-5">
@@ -188,40 +188,101 @@
             </div>
         </div>
     </section>
-    <div class="shape">
-        <img src="img/shape-alt-svg.svg" class="w-100" alt="">
-    </div>
 
     <!-- ===================================
                   Download Section
     ======================================== -->
-    <section class="banner pt-5 pb-4">
+    <section id="download">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h1 class="mb-4">Download the App</h1>
+            <div class="download">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                        <h2>Download the App</h2>
+                        <p>Download the app from App store or Play store and start your survey today!</p>
 
-                    <div class="download-btns justify-content-center">
-                        <a href="#">
-                            <img src="img/appstore.svg" alt="">
-                        </a>
+                        <div class="download-btns">
+                            <a href="#">
+                                <img src="img/appstore.svg" alt="">
+                            </a>
 
-                        <a href="#">
-                            <img src="img/playstore.svg" alt="">
-                        </a>
+                            <a href="#">
+                                <img src="img/playstore.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4">
-                    <div class="images">
+                    <div class="col-lg-6 mt-3">
                         <img src="img/download.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ===================================
+                 Contact Section
+    ======================================== -->
+    <section id="contact" class="enquiry">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div id="contactForm" class="contact">
+                        <h3 class="title">Get In Touch</h3>
+                        <p>The Mission of AskThem is to bring people all over the world closer together with the power
+                            of Feedback.</p>
+                        <div class="row g-md-3 g-1">
+                            <div class="col-md">
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="name"
+                                        required>
+                                    <label for="floatingName">Name *</label>
+
+                                    <span id="name-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md order-1">
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" name="phone" id="phone"
+                                        placeholder="555-555-5555" required>
+                                    <label for="phone">Phone Number *</label>
+
+                                    <span id="phone-error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="name@example.com" required>
+                            <label for="email">Email address *</label>
+
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Write your message here" name="message"
+                                id="message" style="height: 100px" required></textarea>
+                            <label for="message">Message *</label>
+
+                            <span id="message-error"></span>
+                        </div>
+
+                        <button onclick="sendMail()" class="btn btn-dark w-100">Send Message</button>
+
+                        <div class="text-center mt-3 mb-0" style="font-size: 17px;letter-spacing: 1px;"
+                            id="emailSendResult"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="img/contact.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="shape">
-        <img src="img/banner-shape.svg" class="w-100" alt="">
+        <img src="img/shape-alt-svg.svg" class="w-100" alt="">
     </div>
 
     <!-- ===================================
@@ -234,6 +295,7 @@
     </footer>
 
     <!-- JavaScript Bundle -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
