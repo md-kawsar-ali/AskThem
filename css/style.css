@@ -329,6 +329,22 @@ footer p {
     margin: 0;
 }
 
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+footer ul img {
+    max-width: 38px;
+}
+
+.shape.alt {
+    max-height: 60px;
+}
+
 /* =======================================
                 Responsive
 ========================================== */
