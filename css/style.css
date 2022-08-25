@@ -17,8 +17,6 @@ html,
 body {
     font-weight: 400;
     width: 100%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
     padding-right: 0px !important;
 }
 
@@ -339,6 +337,20 @@ footer ul {
 
 footer ul img {
     max-width: 38px;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a,
+footer ul li a:hover,
+footer ul li a:active {
+    color: #353535;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .shape.alt {
