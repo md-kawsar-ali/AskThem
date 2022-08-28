@@ -35,10 +35,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-scroll href="#features">Features</a>
+                            <a class="nav-link" href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-scroll href="#download">Download</a>
+                            <a class="nav-link" href="#download">Download</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-scroll href="#contact">Contact</a>
@@ -325,8 +325,10 @@
     <script>
         // Smooth Scroll
         const scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-            offset: 64
+            speed: 0,
+            offset: 64,
+            speedAsDuration: false,
+            easing: 'linear'
         });
 
         const navs = document.querySelectorAll('.nav-link');
